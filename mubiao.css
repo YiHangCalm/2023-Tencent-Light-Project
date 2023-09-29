@@ -1,0 +1,155 @@
+/* 标题文字位置 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@font-face {
+  font-family: dingding;
+  src: url("../font/dingding.ttf");
+}
+@font-face {
+  font-family: hongleijianti;
+  src: url("../font/chuoshu.ttf");
+}
+@media screen and (max-width: 1000px) {
+  .dropdown .dropbtn {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  /* 隐藏logo */
+  .logo {
+    display: none;
+  }
+}
+/* 下拉菜单************************************ */
+.dropbtn {
+  /* pc隐藏菜单 */
+  display: none;
+  background-color: #6aff56;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: dingding;
+}
+
+.dropdown {
+  left: 85%;
+  position: absolute;
+  font-family: dingding;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0ef2ec;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #20dcfd;
+}
+
+/* ***************************************** */
+.header1 {
+  float: left;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(59, 255, 95, 0.665703781512605) 100%
+  );
+  box-shadow: rgba(50, 50, 66, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.let1 {
+  font-size: 30px;
+  font-family: dingding;
+  letter-spacing: 8px;
+}
+.logo {
+  position: absolute;
+  left: 5%;
+}
+.protect {
+  font-family: hongleijianti;
+  top: 12%;
+  /* 定位模式 绝对定位 */
+  position: absolute;
+  left: 10%;
+  font-size: 23px;
+}
+.nav {
+  left: 79%;
+
+  position: absolute;
+  font-family: dingding;
+}
+.nav a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  font-size: 17px;
+  margin-left: 20px;
+  transition: all 0.3s;
+}
+.nav a:hover {
+  color: #9c9b9b;
+}
+
+.big {
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  background: rgba(243, 248, 255, 0.5);
+}
+
+.wenzi {
+  /* 行与行的距离 */
+  line-height: 2;
+  /* 头部缩进 */
+  text-indent: 32px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
